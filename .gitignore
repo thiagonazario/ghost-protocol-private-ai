@@ -1,0 +1,7 @@
+cat <<EOF > ~/ghost-protocol-private-ai/.gitignore
+__pycache__/
+*.pyc
+.venv/
+.pulumi/
+*.log
+EOF
