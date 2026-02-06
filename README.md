@@ -1,1 +1,3 @@
 Sovereign AI infrastructure engineered to bridge the gap between Accounting and high-performance computing.
+Implementation of Zero-Trust Networking where no AI inference nodes have public IP mappings, ensuring absolute internal sovereignty.
+Fiscal Efficiency: Architecture designed to eliminate unnecessary NAT Gateway costs in development environments by leveraging VPC Endpoints for secure communication with AWS services
