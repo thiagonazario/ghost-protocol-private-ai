@@ -1,6 +1,6 @@
 # 🛡️ Ghost Protocol: Private AI Sanctuary
 
-![Ghost Protocol Architecture](architecture.png)
+![Ghost Protocol Architecture](architecture.jpg)
 
 **Sovereign AI infrastructure engineered to bridge the gap between Accounting and high-performance computing.**
 
