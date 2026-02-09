@@ -14,17 +14,17 @@ def audit_connection(target):
         return False
 
 if __name__ == "__main__":
-    print("--- GHOST PROTOCOL NETWORK AUDIT ---")
+    print("--- GHOST PROTOCOL: NETWORK SECURITY AUDIT ---")
     
-    # 1. Testar se o nó de IA está 'Hardened' (Sem acesso à internet pública)
+    # 1. Test if the AI Node is 'Hardened' (No public internet access)
     internet_access = audit_connection("8.8.8.8")
     
-    # 2. Testar se o motor local está visível (Simulação de IP interno)
-    ai_engine_access = audit_connection("localhost") # No deploy real seria o IP da Subnet Privada
+    # 2. Test if the local engine is visible (Internal IP simulation)
+    ai_engine_access = audit_connection("localhost") # In real deploy, this would be the Private Subnet IP
 
-    print("\n--- AUDIT REPORT (Accounting Standard) ---")
-    print(f"Internet Visibility: {'FAILED (Unsafe)' if internet_access else 'PASSED (Isolated)'}")
-    print(f"Internal AI Sovereignty: {'PASSED' if ai_engine_access else 'FAILED'}")
+    print("\n--- AUDIT REPORT (Accounting & Compliance Standard) ---")
+    print(f"Internet Visibility:      {'FAILED (Unsafe Access Detected)' if internet_access else 'PASSED (Isolation Verified)'}")
+    print(f"Internal AI Sovereignty:  {'PASSED (Secure Link Established)' if ai_engine_access else 'FAILED (Service Unreachable)'}")
     
     if not internet_access and ai_engine_access:
-        print("\n[RESULT] INFRASTRUCTURE IS HARDENED. FISCAL SOVEREIGNTY SECURED.")
+        print("\n[RESULT] INFRASTRUCTURE STATUS: HARDENED. FISCAL SOVEREIGNTY SECURED.")
