@@ -1,7 +1,8 @@
 import pulumi
 import pulumi_aws as aws
 
-# VPC settings with focus in auditory and soverreign
+### --- [NETWORK LAYER: GHOST SVEREIGN VPC] ---
+# Provisioning the core isolated network for private AI operations.
 vpc = aws.ec2.Vpc("ghost-sovereign-vpc",
     cidr_block="10.0.0.0/16",
     enable_dns_hostnames=True,
@@ -13,8 +14,8 @@ vpc = aws.ec2.Vpc("ghost-sovereign-vpc",
         "FinOps-Owner": "Thiago-Nazario"
     })
 
-# Subnet totally private for IA inference
-# No direct gateway = Protection against data leak
+### --- [AI INFERENCE ZONE: ZERO-TRUST SUBNET] ---
+# Isolated subnet with no direct route to the public internet.
 private_subnet = aws.ec2.Subnet("ai-inference-private-zone",
     vpc_id=vpc.id,
     cidr_block="10.0.1.0/24",

@@ -1,5 +1,7 @@
 # 🛡️ Ghost Protocol: Private AI Sanctuary
 
+![Ghost Protocol Architecture](architecture.png)
+
 **Sovereign AI infrastructure engineered to bridge the gap between Accounting and high-performance computing.**
 
 Implementation of **Zero-Trust Networking** where no AI inference nodes have public IP mappings, ensuring absolute internal sovereignty.
@@ -23,3 +25,15 @@ This project follows the **Hardened by Design™** framework, ensuring that AI w
 * **Cloud:** AWS (VPC, Subnets, IAM)
 * **Security:** Zero-Trust Egress Control
 * **Governance:** Automated Network Auditing
+
+---
+
+## 🚀 Infrastructure Validation
+
+### 1. Deployment Evidence
+Below is the successful stack trace of the **Ghost Protocol** infrastructure being provisioned in 24 seconds.
+![Deployment Evidence](deployment-evidence.png)
+
+### 2. Security & Compliance Audit
+Running the automated audit suite to verify Zero-Trust compliance.
+![Network Audit](audit-evidence.png)
