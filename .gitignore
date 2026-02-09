@@ -1,7 +1,5 @@
-cat <<EOF > ~/ghost-protocol-private-ai/.gitignore
+venv/
 __pycache__/
 *.pyc
-.venv/
 .pulumi/
-*.log
-EOF
+Pulumi.dev.yaml
